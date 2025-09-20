@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let name = prompt("Введите, пожалуйста, имя");
+    if (name === null || name === '') {
+      alert("Имя пустое");
+    } else if (name.length < 2) {
+      alert("Имя слишком короткое");
+    } else if (name.length > 50) {
+      alert("Имя слишком длинное");
+    } else {
+      alert("Ваше имя " + name);
+    }
+  </script>
+</body>
+
+</html>
