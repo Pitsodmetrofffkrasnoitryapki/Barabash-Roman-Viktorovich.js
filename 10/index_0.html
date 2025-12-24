@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    "use script";
+
+    class Transport {
+      constructor(type, maxSpeed) {
+        this.type = type;         // тип транспорта
+        this.maxSpeed = maxSpeed; // максимальная скорость
+      }
+
+      startEngine() {
+        console.log("Двигатель запущен");
+      }
+    }
+
+    class Boat {
+      constructor(color, material, maxSpeed) {
+        this.color = color;
+        this.material = material;
+        this.maxSpeed = maxSpeed;
+      }
+
+      sail() {
+        console.log("Плывём по волнам!");
+      }
+    }
+
+    class Bus extends Transport {
+      constructor(type, maxSpeed, passengerCount) {
+        super(type, maxSpeed);
+        this.passengerCount = passengerCount;
+      }
+
+      drive() {
+        console.log(`Едем по маршруту с ${this.passengerCount} пассажирами`);
+      }
+    }
+
+    class Plane extends Transport {
+      constructor(type, maxSpeed, maxAltitude) {
+        super(type, maxSpeed);
+        this.maxAltitude = maxAltitude;
+      }
+
+      startEngine() {
+        console.log("Турбины запускаются...");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
