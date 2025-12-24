@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    "use strict";
+
+    let N = Math.round(+prompt("Введите, пожалуйста, число."));
+    let counter = 1;
+    let sum = 0;
+    if (N >= 1) {
+      while (counter <= N) {
+        sum += counter
+        counter += 1
+      }
+    } else {
+      while (counter >= N) {
+        sum += counter;
+        counter -= 1;
+      }
+    }
+    console.log(`Сумма чисел от 1 до ${N} равна ${sum}.`)
+  </script>
+
+</body>
+
+</html>

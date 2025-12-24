@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    "use strict" // ) Пользователь вводит целое положительное число через prompt(). Напишите программу, которая с помощью цикла for находит и выводит в консоль все делители этого числа.
+
+    let input = +prompt("Введите, пожалуйста, целое положительное число.")
+    console.log(`Делители числа ${input}:`)
+    for (let i = 1; i <= input; i += 1) {
+      if (input % i === 0) {
+        console.log(`                   ${i}`)
+      }
+
+    }
+  </script>
+
+</body>
+
+</html>
