@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    "use strict";
+
+    const matrix = [
+      [64, 362, 35, 786, 53],
+      [73, 87, 0, 80, 367],
+      [98, 457, 76, 21, 36],
+      [64, 1, 765, 534, 26],
+      [27, 852, 14, 98, 60]
+    ];
+
+    let product = 1;
+    for (let i = 0; i < matrix.length; i += 2) {
+      for (let j = 0; j < matrix[i].length; j += 2) {
+        product *= matrix[i][j];
+      }
+    }
+  </script>
+
+</body>
+
+</html>
